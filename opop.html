@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Practice </title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+    <body>
+       <div class="container">
+        <div class="banner">
+            <div class="navbar">
+                <ul>
+                <li><a href="#">Home</a></li>
+				<li><a href="#">Discoveries </a></li>
+				<li><a href="#">Locations</a></li>
+				<li><a href="#">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+       </div>
+
+       <header> Welcome to Khio </header>
+       <p> Here we bring <p1>Answers To The Unknown</p1> Khio is the Future.</p>
+        
+    </section>
+    <section class="wrapper-1">
+        <div class="item-1">
+            <h3> What is Khio?</h3>
+            <p2> We are an International investigation<br>and research facility that specialised in<br>deducing new ways to advance the <br>Human race and exploring
+            the new,<br>the extraterestrial and<br>the unknown</p2>
+        </div>
+        <div class="item-2">
+            <h3>What do we offer?</h3>
+            <p2> Khio Supplies research information<br>to many pharmaceutical and military<br>companies to aid in medical<br> and security services</p2>
+        </div>
+        <div class="item-3">
+            <h3> Why do we need you?</h3>
+            <p2> We need the cooperation<br>from you the people to<br>report your findings on<br>extraterestrial objects<br>and life forms for our research</p2>
+        </div>
+    </section>
+    <div class="container-2">
+        <h1> World Wide findings </h1>
+        <p8> Showing You the people our findings will show you're not absent minded from our research</p8>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Location of extraction</th>
+                </tr>
+            </thead>
+        <tbody>
+            <tr>
+                <td>I</td>
+                <td>kyrobranium</td>
+                <td> liquid metal</td>
+                <td>Greece</td>
+            </tr>
+            <tr>
+                <td>II</td>
+                <td>Rekiom</td>
+                <td>Plant</td>
+                <td>Thailand</td>
+            </tr>
+            <tr>
+                <td>III</td>
+                <td>Cybrex.011</td>
+                <td>Mammal</td>
+                <td>Beijing</td>
+            </tr>
+            <tr>
+                <td>IV</td>
+                <td>Vyrinn</td>
+                <td>Fish</td>
+                <td>Amsterdam</td>
+            </tr>
+        </tbody>
+        </table>
+
+
+        <center>
+        <div class="container-4">
+            <div class="tab_box">
+                <button class="tab_btn"> kyrobranium</button>
+                <button class="tab_btn"> Rekiom</button>
+                <button class="tab_btn"> Cybrex</button>
+                <button class="tab_btn"> Vyrinn</button>
+                <div class="line"></div>
+            </div>
+            <div class="content_box">
+                <div class="content">
+                    <h2> Kyrobranium</h2>
+                    <p4>
+                        Kyrobranium which was found in Greece, in the year 1982 has since shown signs of a liquidised state and can be used to substitute metal
+                        fillings for dentition, for new projects in the chemical field and can be used in the military.<br>
+                        Kyrobranium may have a liquid state but it possesses a very high conduction rate for electricity and an affinity to Titanium.
+                        <strong>Mixing these metals together can create an entirely new and powerful compound.</strong> 
+                    </p4>
+                <img src="IMG_6274.jpg" class="kk">
+                </div>
+                <div class="content">
+                    <h2> Rekiom</h2>
+                    <p4>
+                        Rekiom is a unique plant species that was found in Thailand in the year 2015, although it's strange to find such a species there, 
+                        we encountered a great discovery properties of this plant are still being investigated to see what use it has to human society.
+                        <br><strong> Rekiom exhibits weird characteristics that makes us believe there's something special about it.</strong>
+                    </p4>
+                <img src="IMG_6276.jpg" class="jk">
+                </div>
+                <div class="content">
+                    <h2> Cybrex</h2>
+                    <p4>
+                        Cybrex is the most interesting discovery Khio has had in a while. A  Mammal like creature that exhibits multiple signs 
+                        of adaptability to most habitats, Cybrex can swim better than most Aquatic bodies and it's unique build brings more of it's abilities 
+                        to the question. 
+                        <br><strong> Cybrex has the most successful break out attepmts from our research facility</strong>
+                    </p4>
+                <img src="IMG_6278.jpg" class="tr">
+                </div>  
+                <div class="content">
+                    <h2> Vyrinn</h2>
+                    <p4>
+                            Vyrinn was hard to catch as it swims at unbelievable speeds beating many speed boats and capturers, this Aquatic beings shows resemblance
+                            to dinosuars and may contain cellular mixtures with other ancient creatures before our time.
+                            <br><strong> Vyrinn is top 20 of the most dangerous species we've encountered</strong>
+                    </p4>
+                    <img src="IMG_6279.JPG" class="il">
+                </div>
+            </div>
+        </div>
+        <script>
+            const tabs= document.querySelectorAll('.tab_btn');
+            const all_content= document.querySelectorAll('.content');
+
+            tabs.forEach((tab, index)=>{
+                tab.addEventListener('click', (e)=>{
+                    tabs.forEach(tab=>{tab.classList.remove('active')});
+                    tab.classList.add('active');
+
+                    
+                   var line=document.querySelector('.line');
+                line.style.width =  e.target.offsetWidth + "px";
+                line.style.left =  e.target.offsetLeft + "px";
+
+                all_content.forEach(content=>{  content.classList.remove('active')});
+                all_content[index].classList.add('active');
+                })
+            })
+        </script>
+        </center>
+        <center>
+            <br></br>
+            <div>
+                <button type="button"><span></span>Contact Us</button>
+                <button type="button"><span></span>Become A Sponsor</button>
+            </div>
+            </center>
+
+    </body>
+</html>
